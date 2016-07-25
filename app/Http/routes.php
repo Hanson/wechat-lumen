@@ -13,8 +13,9 @@
 
 $app->post('/', 'HomeController@index');
 
-$app->get('/t', function () use ($app) {
-    phpinfo();
-//    return Config::get('wechat');
-//    return config();
+$app->group(['prefix' => 'menu', 'namespace' => 'App\Http\Controllers'], function() use ($app){
+
+    $app->get('store', 'MenuController@store');
+    $app->get('test', 'MenuController@test');
+
 });

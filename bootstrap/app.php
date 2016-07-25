@@ -78,7 +78,9 @@ $app->singleton(
 |
 */
 
-$app->register(Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
+if(getenv('APP_ENV') === 'local'){
+    $app->register(Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class);
+}
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
@@ -99,5 +101,6 @@ $app->group(['namespace' => 'App\Http\Controllers'], function ($app) {
 });
 
 $app->configure('wechat');
+$app->configure('menu');
 
 return $app;
