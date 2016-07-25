@@ -1,7 +1,7 @@
 # lumen-wechat
 A wechat Application build on lumen
 
-lumen-wechat 基于[lumen](https://lumen.laravel.com/)以及[easywechat](easywechat.org)开发的微信项目
+此项目基于[lumen](https://lumen.laravel.com/)以及[easywechat](easywechat.org)开发的微信项目
 
 ## Installation
 
