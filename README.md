@@ -23,3 +23,17 @@ php artisan migrate
 
 ## Handler
 所有消息事件都位于`app/Handlers`中，事件Handler位于`app/Handlers/EventHandlers`中
+
+
+## Service
+所有的服务事件，直接在继承BaseController 的 Controller中 调用 $this->service即可
+
+    #example:
+    class MyController extends BaseController{
+    
+        public function index(){
+            $user = $this->user;
+            echo $user->get('openid')->nickname;
+        }
+    }
+
