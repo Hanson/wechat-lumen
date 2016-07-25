@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
 
-    public $table = 'wechat_user';
+    public $table = 'user';
 
     protected $guarded = [];
 

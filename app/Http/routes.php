@@ -19,3 +19,7 @@ $app->group(['prefix' => 'menu', 'namespace' => 'App\Http\Controllers'], functio
     $app->get('test', 'MenuController@test');
 
 });
+
+$app->group(['prefix' => 'api', 'namespace' => 'App\Http\Controllers', 'middleware' => 'auth'], function() use ($app){
+
+});

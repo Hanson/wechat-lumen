@@ -12,7 +12,7 @@ class AddWechatUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('wechat_user', function(Blueprint $table){
+        Schema::create('user', function(Blueprint $table){
             $table->increments('id');
             $table->string('open_id')->unique();
             $table->string('nickname');
@@ -35,6 +35,6 @@ class AddWechatUserTable extends Migration
      */
     public function down()
     {
-        Schema::drop('wechat_user');
+        Schema::drop('user');
     }
 }
