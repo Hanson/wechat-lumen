@@ -2,6 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use EasyWeChat\Server\Guard;
+
+/**
+ * @property Guard server
+ */
+
 class HomeController extends BaseController
 {
 
