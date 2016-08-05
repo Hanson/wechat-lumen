@@ -3,6 +3,8 @@ A wechat Application build on lumen
 
 此项目基于[lumen](https://lumen.laravel.com/)以及[easywechat](easywechat.org)开发的微信项目
 
+*注意：为了降低耦合，暂停维护此项目，已移步去 [wechat-handler](https://github.com/HanSon/wechat-handler)，能够使用在laravel以及lumen上*
+
 ## Installation
 
 ```
