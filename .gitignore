@@ -1,6 +1,6 @@
 /vendor
 .env
 .idea
-storage
 _ide_helper.php
 *.lock
+*.log
